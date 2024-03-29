@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./todoModal.css" />
+    <title>todo App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Todo List</h1>
+    </header>
+    <section class="container">
+      <div class="form-container">
+        <form class="todo-form">
+          <input type="text" class="todo-input" autofocus />
+          <button class="todo-button" type="submit">
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+        </form>
+        <div class="select">
+          <select class="filter-todos" name="todos">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </div>
+      <div class="todo-container">
+        <ul class="todolist">
+          <!-- <li class="todo">
+                <p class="todo__title">my todo</p>
+                <span class="todo__createdAt">۱۴۰۲/۰۱/۲۸</span>
+                <button><i class="todo__check far fa-check-square"></i></button>
+                <button><i class="todo__remove far fa-trash-alt"></i></button>
+            </li>
+            <li class="todo">
+                <p class="todo__title">my todo</p>
+                <span class="todo__createdAt">۱۴۰۲/۰۸/۲۰</span>
+                <button><i class="todo__check far fa-check-square"></i></button>
+                <button><i class="todo__remove far fa-trash-alt"></i></button>
+            </li> -->
+        </ul>
+      </div>
+      <div class="backdrop hidden"></div>
+      <div class="modal-container hidden">
+        <div class="edit-modal">
+          <form class="edit-form">
+            <input type="text" class="edit-input" autofocus />
+            <button class="edit-button" type="submit">edit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="./todoModal.js"></script>
+  </body>
+</html>

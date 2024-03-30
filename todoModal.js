@@ -45,7 +45,7 @@ function createTodos(todos){
         result+=`<li class="todo">
         <p class="todo__title ${todo.isCompleted && "completed"}">${todo.title}</p>
         <span class="todo__createdAt">${new Date(todo.createdAt).toLocaleDateString("fa-IR")}</span>
-        <button class="todo__edit" data-todo-id="${todo.id}">edit</button>
+        <button class="todo__edit" data-todo-id="${todo.id}"><i class="fa-regular fa-pen-to-square"></i></button>
         <button class="todo__check" data-todo-id="${todo.id}"><i class="far fa-check-square"></i></button>
         <button class="todo__remove" data-todo-id="${todo.id}"><i class="far fa-trash-alt"></i></button>
         </li>`;
